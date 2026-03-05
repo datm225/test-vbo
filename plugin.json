@@ -3,7 +3,7 @@
     "name": "test stv",
     "description": ""
   },
-  "data": {
+  "data": [{
     "author": "vBook",
       "version": 1,
       "source": "test1stv",
@@ -11,5 +11,5 @@
       "icon": "https://raw.githubusercontent.com/datm225/test-vbo/master/stv/icon.png",
       "description": "Nghe truyện bằng TTS tiktok stv",
       "type": "tts"
-  }
+  }]
 }
