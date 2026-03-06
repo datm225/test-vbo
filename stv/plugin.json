@@ -2,9 +2,9 @@
   "metadata": {
     "name": "Tiktok TTS (STV Fix)",
     "author": "vBook",
-    "version": 3.1,
+    "version": 1,
     "source": "https://sangtacviet.com",
-    "description": "Sửa lỗi không khởi động được chức năng đọc",
+    "description": "Khởi động được chức năng đọc",
     "type": "tts"
   },
   "script": {
