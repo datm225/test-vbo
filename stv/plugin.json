@@ -1,10 +1,10 @@
 {
   "metadata": {
-    "name": "stv tts tiktok",
-    "author": "vBook",
-    "version": 1,
+    "name": "Tiktok TTS (STV)",
+    "author": "Custom",
+    "version": 2,
     "source": "https://sangtacviet.com",
-    "description": "Nghe truyện bằng Tiktok TTS",
+    "description": "Nghe truyện qua server Sangtacviet",
     "type": "tts"
   },
   "script": {
@@ -13,7 +13,7 @@
   },
   "config": {
     "preload_size": 3,
-    "max_length": 250, 
+    "max_length": 200,
     "support_url": "https://sangtacviet.com"
   }
 }
