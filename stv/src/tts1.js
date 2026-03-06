@@ -23,7 +23,7 @@ function execute(text, voice) {
             // Hàm .base64() sẽ chuyển đổi dữ liệu Binary từ server Sangtacviet thành chuỗi chuẩn.
             var result = response.base64(); 
             
-            if (result && result.length > 100) {
+            if (result && result.length > 500) {
                 return Response.success(result);
             }
         }

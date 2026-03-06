@@ -35,7 +35,7 @@ function execute(text, voice) {
                 var result = response.base64(); 
                 
                 // Kiểm tra nếu dữ liệu trả về đủ lớn (tránh trường hợp file lỗi/trống)
-                if (result && result.length > 100) {
+                if (result && result.length > 500) {
                     return Response.success(result);
                 }
             }
