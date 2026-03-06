@@ -1,10 +1,11 @@
 load("voice_list.js");
 
 function execute(text, voice) {
-    // URL endpoint của Sangtacviet
+    // Endpoint của Sangtacviet
     var url = "https://sangtacviet.com/io/s1213/tiktoktts?text=";
 
     try {
+        // Sử dụng var thay cho let/const để tránh lỗi môi trường cũ
         var response = fetch(url, {
             method: 'POST',
             headers: {
@@ -19,25 +20,24 @@ function execute(text, voice) {
         });
 
         if (response.ok) {
-            // Lấy nội dung trả về
             var resultText = response.text();
-            
-            // Nếu là JSON (giống cấu trúc cũ), bóc tách lấy chuỗi base64
-            if (resultText && resultText.trim().indexOf('{') === 0) {
+
+            // Kiểm tra nếu là JSON
+            if (resultText && resultText.indexOf('{') === 0) {
                 var result = JSON.parse(resultText);
                 if (result.data && result.data.v_str) {
                     return Response.success(result.data.v_str);
                 }
             }
-            
-            // Nếu là chuỗi base64 trực tiếp, trả về luôn
+
+            // Nếu server trả về trực tiếp chuỗi Base64
             if (resultText && resultText.length > 100) {
                 return Response.success(resultText);
             }
         }
     } catch (e) {
-        return Response.error("Lỗi: " + e.message);
+        return Response.error("Lỗi thực thi: " + e.message);
     }
 
-    return Response.error("Không nhận được dữ liệu âm thanh.");
+    return Response.error("Không nhận được dữ liệu âm thanh từ server.");
 }
