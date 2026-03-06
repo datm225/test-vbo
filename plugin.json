@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "name": "test stv1",
+    "name": "test stv11",
     "description": ""
   },
   "data": [{
@@ -9,7 +9,7 @@
       "source": "https://teststvtts.com",
       "path": "https://raw.githubusercontent.com/datm225/test-vbo/test1/stv/plugin.zip",
       "icon": "https://raw.githubusercontent.com/datm225/test-vbo/test1/stv/icon.png",
-      "description": "Nghe truyện bằng TTS tiktok stv",
+      "description": "Nghe truyện bằng TTS tiktok stv11",
       "type": "tts"
   }]
 }
