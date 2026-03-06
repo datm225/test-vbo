@@ -1,9 +1,9 @@
 load("voice_list.js");
-
+//thay doi
 function execute(text, voice) {
     // Endpoint trung gian của Sangtacviet
     var url = "https://sangtacviet.com/io/s1213/tiktoktts?text=";
-
+	
     try {
         var response = fetch(url, {
             method: 'POST',
