@@ -5,7 +5,8 @@ function execute(text, voice) {
     var domains = [
         "https://sangtacviet.com",
         "https://sangtacviet.pro",
-        "https://sangtacviet.vip"
+        "https://sangtacviet.vip",
+        "https://sangtacviet.app"
     ];
 
     var lastError = "";
